@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-color: rgb(255, 255, 255);
+}
+
+.container__header {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#F5F4F4;
+  color: rgb(0, 0, 0);
+  font-family: "Alfa Slab One", cursive;
+  font-size: 30PX;
+}  
+.Productos{
+font-size: xx-large;
+} 
+
+
+.container__header__title--text {
+  cursor: default;
+}
+
+.container__header__menu {
+  padding-left: 5px;
+}
+
+.container__header__cartDiv {
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 50px;
+  padding-right: 5px;
+}
+
+.container__header__cartDiv--count {
+  width: 35px;
+  height: 35px;
+  margin-top: 6px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: default;
+  background-color: rgb(234, 236, 86);
+}
+.row{
+  
+  height: auto;
+ 
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+ 
+  padding-left: 30px;
+  
+  
+
+}
+.enviar{
+  background-color: #f3db01; 
+    width: 158px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #050505; 
+    margin-top: 10px;  
+    padding-left: 10px;
+  margin-bottom: 20px; 
+  margin-right: 2%;
+}
+
+
+
+  .col-md-10{
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+   
+  }
+  
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 2px solid #d3c01c;
+    border-radius: .25rem;
+    
+  }
+  .form-control1 {
+    display: block;
+    width: 100%;
+    height: 183px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #161515;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 2px solid #d3c01c;
+    border-radius: .25rem;
+  }
+  .form-control3 {
+    
+    width: 500px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 2px solid #d3c01c;
+    border-radius: .25rem;
+    
+  }
+  .form-control4 {
+    display: block;
+    width: 100%;
+    height: 183px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #161515;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 2px solid #d3c01c;
+    border-radius: .25rem;
+  }
+
+  .titleForm{
+    font-size: 20px;
+    margin-right: 350px;
+  }
+  .container__header__cartDiv--list {
+    display: none;
+    min-width: 100px;
+    right: 0;
+    top: 50px;
+    position: absolute;
+    z-index: 999;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    background-color:transparent;
+   
+  }
+  .container__header__cartDiv--list ul {
+    list-style-position: initial;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    padding: 10PX;
+    margin: 3PX;
+    box-shadow: 0 0 10px 2px rgb(240, 173, 28);
+  }
+  .container__header__cartDiv--list img {
+    max-width: 100px;
+  }
+  
+  .container {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .container .container__content {
+    display: flex;
+    flex-flow: column wrap;
+    
+    justify-content: space-around;
+    min-width: 100vw;
+    background-color: rgb(255, 255, 255);
+  }
+  .container .container__content .container__content__title {
+    height: 20vh;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+  .IMAGENBIEN{
+    width: 374px;
+    }
+    .container .container__content .container__content__listBurgers {
+      
+      align-content: center;
+      align-items: center;
+      margin-top: 100px;
+      
+    }
+    .container .container__content .container__content__burgers {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between;
+      margin: 60px;
+      padding: 10px;
+      width: 400px;
+      min-height: 200px;
+      list-style: none;
+      margin-top: -40PX;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 2px rgb(240, 173, 28);
+      transition: 0.4s;
+    }
+    .container .container__content .container__content__burgers:hover {
+      transform: translateY(20px);
+    }
+    .container__content__burgers--nombre{
+    
+      color: #111;
+      font-size: 1rem;
+      margin-left: 41px;
+      
+    }
+    
+    .container__content__burgers--precio{
+    
+      color: #111;
+      font-size: 1.2rem;
+    }
+    .container .container__content .container__content__burgers .container__content__burgers--nombre, .container .container__content .container__content__burgers .container__content__burgers--precio {
+      color: rgb(19, 19, 19);
+    }
+    .container .container__content .container__content__burgers .container__content__burgers--nombre {
+      font-family: "Alfa Slab One", cursive;
+      font-size: 1.4rem;
+    }
+    .container .container__content .container__content__burgers .container__content__burgers--precio {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.4rem;
+    }
+    .container .container__footer {
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      font-size: 0.8rem;
+    }
+    .container__content__burgers{
+    
+      background-color: white;
+    }
+    .container__content__burgers--btnAdd {
+      cursor: pointer;
+      color: white;
+      border: 0;
+      background-color: #ffd900;
+      text-shadow: 1px 0px #111;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 1.4rem;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 2px;
+      padding: 0 10px 0 10px;
+    }
+    
+    .container__content__burgers--btnDel {
+      cursor: pointer;
+      color: white;
+      border: 0;
+      background-color: red;
+      text-shadow: 1px 0px #111;
+      font-family: "Alfa Slab One", cursive;
+      font-size: 1.4rem;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 2px;
+      padding: 0 10px 0 10px;
+      margin-right: 10px;
+    }
+    
+    .container__content__burgers--btnClose {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      cursor: pointer;
+      font-family: "Alfa Slab One", cursive;
+      color: rgb(29, 29, 29);
+      background-color: transparent;
+      font-size: 1.2rem;
+    }
+    
+    
+    
+    .container__header__menu--button {
+      cursor: pointer;
+      background-color: transparent;
+    
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 0;
+      width: 20px;
+      height: 20px;
+    }
+      .container__header__cartDiv--btnCart {
+        cursor: pointer;
+        background-color: transparent;
+        background-image: url("https://image.flaticon.com/icons/png/512/107/107831.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+        width: 60px;
+        height: 60px;
+        ;
+      }
+
+  @media screen and (min-width: 300px) {
+    .IMAGENBIEN{
+      width: 360px;
+      }
+      .form-control3 {
+        
+        width: 310px;
+        
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #161515;
+        background-color: rgb(255, 255, 255);
+        background-clip: padding-box;
+        border: 2px solid #d3c01c;
+        border-radius: .25rem;
+      }
+      .titleForm1{
+        margin-right: 1000px;
+       margin-top:30px;
+      }
+      @media screen and (min-width: 350px) {
+        .form-control3 {
+        
+          width: 355px;
+          
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #161515;
+          background-color: rgb(255, 255, 255);
+          background-clip: padding-box;
+          border: 2px solid #d3c01c;
+          border-radius: .25rem;
+        }
+        .container__header {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100vw;
+            height: 50px;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F4F4;
+            color: rgb(0, 0, 0);
+            font-family: "Alfa Slab One", cursive;
+            font-size:25PX;
+            
+            
+          }
+          
+          .container__header__title--text {
+            cursor: default;
+          }
+          
+          .container__header__menu {
+            padding-left: 5px;
+          }
+          
+          .container__header__cartDiv {
+            display: flex;
+            flex-flow: row;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 50px;
+            padding-right: 5px;
+          }
+      
+    
+      .container .container__content .container__content__burgers {
+        display: flex;
+        flex-flow: column wrap;
+        
+        justify-content: space-between;
+        margin: 60px;
+        padding: 10px;
+        width: 250px;
+        min-height: 200px;
+        list-style: none;
+        margin-right: 0px;
+        margin-top: -40PX;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 2px rgb(240, 173, 28);
+        transition: 0.4s;
+      }
+      
+      .container .container__content .container__content__burgers .container__content__burgers--image {
+        
+        max-width: 250px;
+        
+      }
+      
+      .container .container__content .container__content__burgers .container__content__burgers--nombre {
+        font-family: "Alfa Slab One", cursive;
+        font-size: 1.4rem;
+      }
+      .container .container__content .container__content__burgers .container__content__burgers--precio {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.4rem;
+      }
+      .container .container__footer {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 0.8rem;
+      }
+      .container .container__content {
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 100vw;
+        
+        background-color:#F5F4F4;
+      }
+      
+  @media screen and (min-width: 370px) {
+  .IMAGENBIEN{
+    width: 375px;
+    }
+    .form-control3 {
+        
+      width: 365px;
+      
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #161515;
+      background-color: rgb(255, 255, 255);
+      background-clip: padding-box;
+      border: 2px solid #d3c01c;
+      border-radius: .25rem;
+    }
+    @media screen and (min-width: 380px) {
+      .IMAGENBIEN{
+        width: 410px;
+        }
+        @media screen and (min-width: 400px) {
+          .IMAGENBIEN{
+            width: 420px;
+            }
+            .form-control3 {
+        
+              width: 405px;
+              
+              padding: .375rem .75rem;
+              font-size: 1rem;
+              line-height: 1.5;
+              color: #161515;
+              background-color: rgb(255, 255, 255);
+              background-clip: padding-box;
+              border: 2px solid #d3c01c;
+              border-radius: .25rem;
+            }
+            @media screen and (min-width: 500px) {
+              .IMAGENBIEN{
+                width: 540px;
+              }
+              @media screen and (min-width: 560px) {
+
+
+                .container .container__content .container__content__listBurgers{
+            
+                    display:grid;
+                    grid-template-columns: repeat(2,1fr);
+            
+            
+                  }
+                }
+  @media screen and (min-width: 760px) {
+    .IMAGENBIEN{
+      width: 100%;
+    }
+    .form-control3 {
+        
+      width: 755px;
+      
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #161515;
+      background-color: rgb(255, 255, 255);
+      background-clip: padding-box;
+      border: 2px solid #d3c01c;
+      border-radius: .25rem;
+    }
+    .container .container__content {
+   
+      align-content: center;
+      align-items: center;
+      }
+      .container__header {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100vw;
+        height: 50px;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F5F4F4;
+        color: rgb(0, 0, 0);
+        font-family: "Alfa Slab One", cursive;
+        font-size: 30PX;
+        
+        
+      }
+      
+      .container__header__title--text {
+        cursor: default;
+      }
+      
+      .container__header__menu {
+        padding-left: 5px;
+      }
+      
+      .container__header__cartDiv {
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 50px;
+        padding-right: 5px;
+      }
+      
+      .container__header__cartDiv--count {
+        margin-top: 0px;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        border-radius: 100%;
+        cursor: default;
+        background-color: rgb(234, 236, 86);
+      }
+      
+      .container__header__cartDiv--list {
+        display: none;
+        min-width: 100px;
+        right: 0;
+        top: 50px;
+        position: absolute;
+        z-index: 999;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 20px;
+        background-color:transparent;
+       
+      }
+      .container__header__cartDiv--list ul {
+        list-style-position: initial;
+        display: flex;
+        
+        align-content: center;
+        align-items: center;
+        padding: 10PX;
+        margin: 3PX;
+        margin-top: 100px;
+      }
+      .container__header__cartDiv--list img {
+       
+        
+        max-width: 250px;
+        max-height: 150px;
+        
+      }
+      
+      .container {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      .container .container__content {
+        display: flex;
+        flex-flow: column wrap;
+        
+        justify-content: space-around;
+        min-width: 100vw;
+        background-color: rgb(255, 255, 255);
+      }
+      .container .container__content .container__content__title {
+        height: 20vh;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+      }
+      .container .container__content .container__content__listBurgers {
+        
+        align-content: center;
+        align-items: center;
+        
+      }
+      .container .container__content .container__content__burgers {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin: 60px;
+        padding: 10px;
+        width: 300px;
+        min-height: 200px;
+        list-style: none;
+        margin-top: -40PX;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 2px rgb(240, 173, 28);
+        transition: 0.4s;
+      }
+      .container .container__content .container__content__burgers:hover {
+        transform: translateY(20px);
+      }
+      
+      .container .container__content .container__content__burgers .container__content__burgers--nombre, .container .container__content .container__content__burgers .container__content__burgers--precio {
+        color: rgb(19, 19, 19);
+      }
+      .container .container__content .container__content__burgers .container__content__burgers--nombre {
+        font-family: "Alfa Slab One", cursive;
+        font-size: 1.4rem;
+      }
+      .container .container__content .container__content__burgers .container__content__burgers--precio {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.4rem;
+      }
+    }
+      }
+
+  @media screen and (min-width: 900px) {
+
+    .IMAGENBIEN{
+            width: 1022px;
+    }
+      @media screen and (min-width: 1000px) {
+        .IMAGENBIEN{
+                width: 1024px;
+        }
+  @media screen and (min-width: 1000px) {
+    .form-control{
+     width: 500px;
+     margin-left: 60px;
+    }
+    .form-control1{
+      width: 500px;
+      margin-left: 60px;
+     }
+     .form-contro3{
+      width: 100%;
+      margin-left: 260px;
+     }
+     .form-control4{
+       width: 750px;
+       margin-left: 320px;
+      }
+      .titleForm{
+        margin-left: 60px;
+      }
+form.row{
+  align-items: center;
+    text-align: center;
+}
+form.row1{
+  align-items: center;
+    text-align: center;
+}
+.enviar{
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-left: -30px;
+ 
+}
+.container .container__content .container__content__listBurgers{
+
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+@media screen and (min-width: 1100px) {
+  .IMAGENBIEN{
+          width: 1424px;
+    }
+    .container .container__content .container__content__listBurgers{
+           
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+}
+
+      }
+    }
+  }
+}
+  }
+}
+        }
+      }
+    }
+  
+
