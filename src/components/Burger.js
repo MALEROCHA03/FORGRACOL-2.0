@@ -1,7 +1,4 @@
 import React from 'react'
-import ReactWhatsapp from 'react-whatsapp';
-
-
 
 
 const Burger = ({ burger, cart, setCart, burgers }) => {
@@ -15,9 +12,7 @@ const Burger = ({ burger, cart, setCart, burgers }) => {
       const burgers = cart.filter((burger) => burger.id !== id);
       setCart(burgers);
     };
-    const sendWhatsApp = (id) => {
-      <ReactWhatsapp number="57-3196764651" message="Hello World!!!"id />
-    };
+    
     
   
     return (
@@ -43,14 +38,15 @@ const Burger = ({ burger, cart, setCart, burgers }) => {
             >
               ELIMINAR
             </button>
-            <button
+          
+              <a href = { `https://api.whatsapp.com/send?phone=${573204127360}&text=
+        Hola, gracias por comprar en FORGRACOL! La orden es :${nombre} Con un precio de :${precio} La referencia es :${id}`}>
+         <button className="container__content__burgers--btnAdd">
+          CONTINUAR
+        </button>
+        </a>
             
-              className="container__content__burgers--btnAdd"
-              type="button"
-              onClick={() => sendWhatsApp(id)}
-            >
-              CONTINUAR
-            </button>
+            
           </div>
         )}
       </ul>
