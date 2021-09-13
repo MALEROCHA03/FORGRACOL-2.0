@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactWhatsapp from 'react-whatsapp';
-import { Link } from "react-router-dom";
+
 
 
 
@@ -22,7 +22,7 @@ const Burger = ({ burger, cart, setCart, burgers }) => {
   
     return (
       <ul className="container__content__burgers">
-        <img className="container__content__burgers--image" src={image}></img>
+        <img className="container__content__burgers--image" src={image} alt="Imagen"/>
         <li className="container__content__burgers--nombre">{nombre}</li>
         <li className="container__content__burgers--precio">${precio}</li>
         {burgers ? (

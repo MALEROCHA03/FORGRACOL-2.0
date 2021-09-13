@@ -15,7 +15,7 @@ import ALIMENTOS from "../../images/ALIMENTOS.png";
 
 export const Servicios = () => {
 
-    const [burgers,setBurgers] = useState([
+    const [burgers] = useState([
         {id: 15, image:CAJAS1, nombre:'Cajas Personalizadas', precio: 400000},
         {id: 16, image:CAJAS2, nombre:'Cajas Personalizadas', precio: 200000},
         {id: 17, image:CAJAS3, nombre:'Cajas Personalizadas', precio: 300000},
@@ -46,7 +46,7 @@ return (
   
             {/* TITULO DE LA CABECERA */}
             <div className="container__header__title">
-              <h3 className="container__header__title--text"></h3>
+              
             </div>
   
             {/* CART DE LA CABECERA */}

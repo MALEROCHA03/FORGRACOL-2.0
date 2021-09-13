@@ -20,7 +20,7 @@ import ALIMENTOS from "../../images/ALIMENTOS.png";
 import Formulario from '../formulario/formulario';
 
  export const Home = () => {
-    const [burgers,setBurgers] = useState([
+    const [burgers] = useState([
         {id: 1, image:CAJA, nombre:'Cajas Personalizadas', precio: 300000},
         {id: 2, image:IMANES,nombre:'Imanes Personalizados', precio: 150000},
         {id: 3, image:SELLOS,nombre:'Sellos Personalizados', precio: 80000},
@@ -53,9 +53,9 @@ return (
             </div>
   
             {/* TITULO DE LA CABECERA */}
-            <div className="container__header__title">
-              <h3 className="container__header__title--text"></h3>
-            </div>
+            <div className="container__header__title"/>
+              
+            
   
             {/* CART DE LA CABECERA */}
             <div className="container__header__cartDiv">
@@ -69,7 +69,7 @@ return (
             
             
         <div>  
-    <img src={BIENVENDO} class="IMAGENBIEN"/>
+    <img src={BIENVENDO} alt="imagen"class="IMAGENBIEN"/>
      </div>
         
   

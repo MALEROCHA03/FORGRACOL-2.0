@@ -19,7 +19,7 @@ import ALIMENTOS from "../../images/ALIMENTOS.png";
 
 
  export const Productos= () => {
-    const [burgers,setBurgers] = useState([
+    const [burgers] = useState([
         {id: 1, image:CAJA, nombre:'Cajas Personalizadas', precio: 300000},
         {id: 2, image:IMANES,nombre:'Imanes Personalizados', precio: 150000},
         {id: 3, image:SELLOS,nombre:'Sellos Personalizados', precio: 80000},
@@ -53,7 +53,7 @@ return (
   
             {/* TITULO DE LA CABECERA */}
             <div className="container__header__title">
-              <h3 className="container__header__title--text"></h3>
+              
             </div>
   
             {/* CART DE LA CABECERA */}

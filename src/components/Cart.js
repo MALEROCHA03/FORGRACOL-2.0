@@ -4,7 +4,7 @@ import "./cart.css";
 
 const Cart = ({ cart, setCart }) => {
     const viewCart = () => {
-        {
+        
             document.querySelector(
                 "div.container__header__cartDiv--list"
             ).style.display = "none"
@@ -14,7 +14,7 @@ const Cart = ({ cart, setCart }) => {
                     : (document.querySelector(
                         "div.container__header__cartDiv--list"
                     ).style.display = "none");
-        }
+        
     };
 
     const closeDiv = () => {

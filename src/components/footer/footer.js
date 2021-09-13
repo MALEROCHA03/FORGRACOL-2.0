@@ -7,7 +7,7 @@ return(
  
   
   <div>
-     <img src={FOOTER} class="IMAGENBIEN"/>
+     <img src={FOOTER} alt="imagen" class="IMAGENBIEN"/>
     </div>
   );
 }

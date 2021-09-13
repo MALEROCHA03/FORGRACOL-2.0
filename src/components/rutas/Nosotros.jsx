@@ -8,7 +8,7 @@ import Burger from '../Burger'
 import ETIQUETAS from "../../images/ETIQUETAS.png";
 import IMANES from "../../images/IMANES.png";
 import STICKERS from "../../images/STICKERS.png";
-import TARJETAS from "../../images/TARJETAS.png";
+
 import AGENDA from "../../images/AGENDA.png";
 import LLAVEROS from "../../images/LLAVEROS.png";
 import CALENDARIO from "../../images/CALENDARIO.png";
@@ -17,7 +17,7 @@ import CAMISETAS from "../../images/CAMISETAS.png";
 import BUSOS from "../../images/BUSOS.png";
 
 export const Nosotros = () => {
-        const [burgers,setBurgers] = useState([
+        const [burgers] = useState([
             {id: 12, image:MUGS,nombre:'Mugs Personalizados', precio: 200000},
             {id: 13, image:CAMISETAS,nombre:'Camisetas Personalizadas', precio: 250000},
             {id: 6, image:BUSOS,nombre:'Busos Personalizados', precio: 350000},
@@ -47,7 +47,7 @@ export const Nosotros = () => {
       
                 {/* TITULO DE LA CABECERA */}
                 <div className="container__header__title">
-                  <h3 className="container__header__title--text"></h3>
+                  
                 </div>
       
                 {/* CART DE LA CABECERA */}
